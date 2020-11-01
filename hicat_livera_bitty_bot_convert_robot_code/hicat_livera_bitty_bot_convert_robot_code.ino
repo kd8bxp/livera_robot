@@ -5,7 +5,7 @@
 // increased PWM needed for my bigger motors
 
 #include <Servo.h>
-#include <SerialCommand.h>
+#include "src/SerialCommand/SerialCommand.h"
 
 int PWM1 = 9;     // control servo
 int PWM_CE = 11;  // servo enable
@@ -161,4 +161,3 @@ void set_motor()
 void unrecognized(const char *command) {
   Serial.println('?');
 }
-
